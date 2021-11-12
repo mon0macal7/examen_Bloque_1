@@ -1,6 +1,6 @@
 //Traer el Json de party con un fetch
 
-fetch("party.JSON")
+fetch("./party.JSON")
   .then((response) => response.json())
   .then((data) => bootcampData(data))
   .catch((error) => console.log(error));
@@ -8,9 +8,15 @@ fetch("party.JSON")
 //Función para iterar arreglo party y acceder a las propiedades de cada objeto
 let bootcampData = (data) => {
   for (const item of data.party) {
-    console.log(item);
-    for (const keys of party.Nombre.Apellido.Edad.Cumpleaños) {
-      console.log(keys);
-    }
+    console.log(item.Nombre);
+    console.log(item.Apellido);
+    console.log(item.Edad);
+    console.log(item.Cumpleaños);
   }
 };
+
+//Pintar en HTML datos de party
+
+let members = document.getElementById("BootcampMembers");
+memberscampData.innerHTML += `<h2 id= '${item.Nombre}'+''${item.Apellido}'></h2>`;
+memberscampData.innerHTML += `<ul id= '${item.Cumpleaños}'></ul>`;
