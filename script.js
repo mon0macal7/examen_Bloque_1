@@ -12,11 +12,12 @@ let bootcampData = (data) => {
     console.log(item.Apellido);
     console.log(item.Edad);
     console.log(item.Cumpleaños);
+
+    let members = document.getElementById("BootcampMembers");
+
+    members.innerHTML += `<h2 id= '${item.Nombre}'+''${item.Apellido}'></h2>`;
+    members.innerHTML += `<ul id= '${item.Cumpleaños}'></ul>`;
   }
 };
 
 //Pintar en HTML datos de party
-
-let members = document.getElementById("BootcampMembers");
-memberscampData.innerHTML += `<h2 id= '${item.Nombre}'+''${item.Apellido}'></h2>`;
-memberscampData.innerHTML += `<ul id= '${item.Cumpleaños}'></ul>`;
