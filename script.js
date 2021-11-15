@@ -13,11 +13,9 @@ let bootcampData = (data) => {
     console.log(item.Edad);
     console.log(item.Cumpleaños);
 
+    //Pintar en HTML datos de party
     let members = document.getElementById("BootcampMembers");
-
-    members.innerHTML += `<h2 id= '${item.Nombre}'+''${item.Apellido}'></h2>`;
-    members.innerHTML += `<ul id= '${item.Cumpleaños}'></ul>`;
+    members.innerHTML += `<h2> ${item.Nombre} ${item.Apellido}</h2>`;
+    members.innerHTML += `<li> cumpleaños: ${item.Cumpleaños} </li>`;
   }
 };
-
-//Pintar en HTML datos de party

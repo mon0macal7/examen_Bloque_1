@@ -1,0 +1,19 @@
+body {
+  background-image: url("https://images.pexels.com/photos/796606/pexels-photo-796606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  opacity: 5;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rebeccapurple;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: end;
+}
