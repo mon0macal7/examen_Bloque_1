@@ -13,9 +13,11 @@ let bootcampData = (data) => {
     console.log(item.Edad);
     console.log(item.Cumpleaños);
 
-    //Pintar en HTML datos de party
+    //Pintar en HTML nombre y apellido de bootcampMembers
     let members = document.getElementById("BootcampMembers");
     members.innerHTML += `<h2> ${item.Nombre} ${item.Apellido}</h2>`;
-    members.innerHTML += `<li> cumpleaños: ${item.Cumpleaños} </li>`;
+    //Pintar en HTML lista con cumpleaños
+    let birthday = document.getElementById("Cumpleaños");
+    birthday.innerHTML += `<h2> ${item.Nombre} <li> cumpleaños: ${item.Cumpleaños} </li>`;
   }
 };
